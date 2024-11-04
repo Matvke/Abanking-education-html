@@ -28,11 +28,20 @@ button{
 .dim{
     color: #FFFFFF8C;
 }
+.red-button{
+    background-color: #FF6E30;
+    padding: 12px 28px;
+    border-radius: 8px;
+    color: #FDF5FF;
+}
 .info-block{
     display: flex;
     padding: 26px 108px;
     width: 1440px;
     box-sizing: border-box;
+}
+.hide{
+    display: none;
 }
 .header{
     .logo-container{
@@ -55,12 +64,6 @@ button{
         align-items: center;
         gap: 12px;
     }
-}
-.red-button{
-    background-color: #FF6E30;
-    padding: 12px 28px;
-    border-radius: 8px;
-    color: #FDF5FF;
 }
 .hero{
     padding-top: 104px;
@@ -154,8 +157,11 @@ button{
     }
     .card-buttons{
         display: flex;
+        .active-like{
+            margin-right: 12px;
+        }
         .like{
-            margin-left: 25px;
+            margin-right: 12px;
         }
         .add{
             margin-right: 124px;
@@ -176,8 +182,6 @@ button{
     background-color: #2C353D33;
     width: 1224px;
     height: 253px;
-    border-radius: 25px;
-    border-image-source: linear-gradient(92.39deg, rgba(255, 255, 255, 0.05) -4.6%, rgba(255, 255, 255, 0) 96.79%);
     background-image: url(Rectangle\ 308.png);
     padding-top: 55px;
     p{
@@ -185,4 +189,12 @@ button{
         padding-bottom: 55px;
         font-size: 24px;
     }
+}
+.active-card{
+    background-image: url(Rectangle\ 5.png);
+    background-color: #2C353D33;
+}
+.active-button{
+    background: #283036;
+    border-radius: 8px;
 }
