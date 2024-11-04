@@ -25,14 +25,15 @@ button{
     border: transparent;
     color: #FFFFFF;
 }
-.dim{
-    color: #FFFFFF8C;
-}
 .red-button{
     background-color: #FF6E30;
     padding: 12px 28px;
     border-radius: 8px;
-    color: #FDF5FF;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.dim{
+    opacity: 0.55;
 }
 .info-block{
     display: flex;
@@ -126,14 +127,23 @@ button{
 .grid-container{
     padding: 0;
     display: grid;
+    align-items: end;
     gap: 25px;
+    row-gap: 100px;
     grid-template-columns: 392px 392px 392px;
-    grid-template-rows: 294px 294px;
+    grid-template-rows: 314px 294px;
     margin-bottom: 117px;
+}
+.active-card{
+    margin-bottom: 20px;
+    background-color: #2C353D33;
+    background-image: url(Rectangle\ 5.png);
 }
 .grid-card{
     border-radius: 15px;
     padding: 33px;
+    box-sizing: border-box;
+    height: 294px;
     .card-top{
         display: flex;
         gap: 30px;
@@ -150,7 +160,8 @@ button{
         margin: 0;
     }
     .card-tag{
-        color: #FFA5378C;
+        color: #FFA537;
+
     }
     .card-description{
         margin-bottom: 30px;
@@ -190,10 +201,7 @@ button{
         font-size: 24px;
     }
 }
-.active-card{
-    background-image: url(Rectangle\ 5.png);
-    background-color: #2C353D33;
-}
+
 .active-button{
     background: #283036;
     border-radius: 8px;
